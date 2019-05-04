@@ -55,4 +55,10 @@ puts '-----'
 puts "Human: #{game.score}"
 puts "CPU: #{game.bad_score}"
 puts ''
-puts ''
+puts 'Play again? (Y/N)'
+bool = gets.chomp.chr.downcase
+if bool == 'y'
+  puts 'Too bad, chum. You gotta close the window and start me again.'
+else
+  puts 'Goodbye.'
+end
